@@ -6,8 +6,12 @@ public class Main {
 		
 		
 		AirconditionerService as=new AirconditionerService();
-	
-		as.AirconditionerUI();
+		
+		while (true) {
+			as.AirconditionerUI();
+			
+		}
+		
 		
 		
 		
