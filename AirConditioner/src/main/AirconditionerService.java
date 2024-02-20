@@ -1,11 +1,12 @@
 package main;
 
 import java.util.Scanner;
+import jun_package.*;
 
 import interface_airConditioner.AirConditionalInterface;
 
 public class AirconditionerService implements AirConditionalInterface{
-
+	
 	@Override
 	public void AirconditionerUI() {
 		System.out.println("choose (1:temperature, 2:windVolume)");
@@ -16,9 +17,10 @@ public class AirconditionerService implements AirConditionalInterface{
 		
 		
 		if(choice1==1) {
+			Change_temperature jun = new Change_temperature();
 			System.out.println("(temperature page)\nButton1(up)\nButton2(down) :");
 			
-			
+			jun.change_temperature(choice1);
 
 			
 //			if(choice2==1) {
